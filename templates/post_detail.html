@@ -3,6 +3,6 @@
 {% block content %}
     <h2>{{ publication.title }}
     <p>{{ publication.body }}</p>
-
+    <a href="{% url 'post_edit' publication.pk %}">Edit</a> 
 {% endblock content %}
     
